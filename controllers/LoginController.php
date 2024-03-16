@@ -6,7 +6,8 @@ use MVC\Router;
 
 class LoginController {
     public static function login( Router $router ) {
-        echo "Desde Login";
+        
+        $router->render('auth/login');
     }
 
     public static function logout( Router $router ) {
@@ -22,6 +23,9 @@ class LoginController {
     }
 
     public static function crear( Router $router ) {
-        echo "Desde Crear";
+        
+        $router->render('auth/crear-cuenta', [
+            
+        ]);
     }
 }
