@@ -15,7 +15,10 @@ class LoginController {
     }
 
     public static function olvide( Router $router ) {
-        echo "Desde Olvide";
+        
+        $router->render('auth/olvide-password', [
+            
+        ]);
     }
 
     public static function recuperar( Router $router ) {
@@ -25,7 +28,7 @@ class LoginController {
     public static function crear( Router $router ) {
         
         $router->render('auth/crear-cuenta', [
-            
+
         ]);
     }
 }
